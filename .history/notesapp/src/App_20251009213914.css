@@ -1,0 +1,77 @@
+
+input.form-control,
+select.form-select {
+  border-radius: 0.7rem;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #ccc;
+  padding: 0.6rem 1rem;
+}
+
+input.form-control:focus,
+select.form-select:focus {
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+  border-color: #007bff;
+}
+
+
+body {
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+.light-mode {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+  border: 1px solid #333;
+}
+
+.dark-mode .navbar {
+  background-color: #222 !important;
+}
+
+
+.card {
+  border-radius: 1rem !important;
+  padding: 1rem;
+  margin: 1rem 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+
+.note-card {
+  border-radius: 1rem;
+  padding: 1rem;
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  color: #212529;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease-in-out;
+}
+
+/* Hover Effect */
+.note-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Different Card Backgrounds for Variety */
+.note-card.red { background: linear-gradient(135deg, #f85032 0%, #e73827 100%); color: #fff; }
+.note-card.blue { background: linear-gradient(135deg, #2193b0 0%, #6dd5ed 100%); color: #fff; }
+.note-card.green { background: linear-gradient(135deg, #56ab2f 0%, #a8e063 100%); color: #fff; }
+.note-card.purple { background: linear-gradient(135deg, #614385 0%, #516395 100%); color: #fff; }
+.note-card.orange { background: linear-gradient(135deg, #ff8008 0%, #ffc837 100%); color: #fff; }
+
+/* Smooth Dark Mode Override for Cards */
+.dark-mode .note-card {
+  background: #2a2a2a;
+  color: #f1f1f1;
+}
